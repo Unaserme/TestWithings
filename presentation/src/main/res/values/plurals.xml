@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <plurals name="browsing_number">
+        <item quantity="one">@string/browsing_number_1</item>
+        <item quantity="other">@string/browsing_number_n</item>
+    </plurals>
+    <plurals name="favorites_number">
+        <item quantity="one">@string/favorites_number_1</item>
+        <item quantity="other">@string/favorites_number_n</item>
+    </plurals>
+</resources>

@@ -1,0 +1,60 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlinx-serialization'
+    id 'dagger.hilt.android.plugin'
+}
+
+android {
+    compileSdkVersion androidConfig.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion androidConfig.minSdkVersion
+        targetSdkVersion androidConfig.targetSdkVersion
+
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+    
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+        freeCompilerArgs += [
+                "-Xopt-in=kotlin.RequiresOptIn",
+        ]
+    }
+}
+
+dependencies {
+
+    implementation project(':domain')
+    implementation project(':core')
+
+    api "com.squareup.retrofit2:retrofit:${versions.retrofit}"
+
+    implementation "com.google.dagger:hilt-android:${versions.hilt}"
+    kapt "com.google.dagger:hilt-android-compiler:${versions.hilt}"
+
+
+    api "androidx.room:room-runtime:${versions.room}"
+    kapt "androidx.room:room-compiler:${versions.room}"
+    // optional - Kotlin Extensions and Coroutines support for Room
+    implementation "androidx.room:room-ktx:${versions.room}"
+
+    debugApi "com.squareup.okhttp3:logging-interceptor:${versions.okHttp}"
+    api "com.squareup.okhttp3:okhttp:${versions.okHttp}"
+    api "org.jetbrains.kotlinx:kotlinx-serialization-json:${versions.serializationJson}"
+    api "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:${versions.serializationRetrofit}"
+    api "com.squareup.okio:okio:${versions.okio}"
+
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:${versions.coroutines}"
+
+    implementation "androidx.preference:preference-ktx:${versions.preference}"
+
+}

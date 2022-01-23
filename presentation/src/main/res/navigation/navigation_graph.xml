@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/navigation_browsing">
+
+    <fragment
+        android:id="@+id/navigation_browsing"
+        android:name="com.synaone.testwithings.presentation.browsing.BrowsingFragment"
+        tools:layout="@layout/fragment_browsing" >
+        <action
+            android:id="@+id/action_navigation_browsing_to_navigation_settings"
+            app:destination="@id/navigation_settings" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_favorites"
+        android:name="com.synaone.testwithings.presentation.favorite.FavoriteFragment"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_navigation_favorites_to_navigation_detail"
+            app:destination="@id/navigation_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_detail"
+        android:name="com.synaone.testwithings.presentation.detail.DetailFragment"
+        tools:layout="@layout/fragment_detail" >
+
+        <argument
+            android:name="currentId"
+            app:argType="integer"
+            app:nullable="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.synaone.testwithings.presentation.settings.SettingsFragment" />
+</navigation>

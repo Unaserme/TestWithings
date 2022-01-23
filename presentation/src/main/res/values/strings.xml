@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:locale="en" >
+
+    <string name="app_name">Test Withings</string>
+
+    <string name="tab_bar_browsing">Browse</string>
+    <string name="tab_bar_favorites">Favorites</string>
+    <string name="tab_bar_filters">Filters</string>
+
+    <string name="browsing_title">Browsing</string>
+    <string name="browsing_search">Search (validate to search)</string>
+    <string name="browsing_no_more_image">No more image</string>
+    <string name="browsing_number_1">%d image</string>
+    <string name="browsing_number_n">%d images</string>
+    <string name="browsing_no_image">No image available.</string>
+
+    <string name="favorites_number_1">%d favorite</string>
+    <string name="favorites_number_n">%d favorites</string>
+    <string name="favorites_no_image">No favorite image.</string>
+
+    <string name="detail_views">Views: %d</string>
+    <string name="detail_likes">Likes: %d</string>
+    <string name="detail_downloads">Downloads: %d</string>
+    <string name="detail_comments">Comments: %d</string>
+
+    <string name="settings_safe_search">Only images suitable for all ages should be returned.</string>
+    <string name="editor_choice">Only images which received an Editor\'s Choice award.</string>
+    <string name="filters_language">Language to be searched in.</string>
+    <string name="filters_category">Filter results by category.</string>
+    <string name="filters_colors">Filter images by color properties.</string>
+    <string name="filters_order">How the results should be ordered.</string>
+    <string name="filters_image_type">Filter results by image type.</string>
+
+
+</resources>

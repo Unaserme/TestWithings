@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="available_colors_entries" >
+        <item>grayscale</item>
+        <item>transparent</item>
+        <item>red</item>
+        <item>orange</item>
+        <item>yellow</item>
+        <item>green</item>
+        <item>turquoise</item>
+        <item>blue</item>
+        <item>lilac</item>
+        <item>pink</item>
+        <item>white</item>
+        <item>gray</item>
+        <item>black</item>
+        <item>brown</item>
+    </string-array>
+</resources>

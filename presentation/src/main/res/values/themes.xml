@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Withings.Light" parent="Theme.Withings.Light.Base" />
+
+    <style name="Theme.Withings.Light.Base" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- region Common section to both light and dark themes -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- endregion -->
+    </style>
+</resources>

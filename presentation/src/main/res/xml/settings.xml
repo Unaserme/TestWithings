@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <SwitchPreferenceCompat
+        app:key="safe_search"
+        app:title="@string/settings_safe_search"
+        app:singleLineTitle="false" />
+
+    <SwitchPreferenceCompat
+        app:key="editor_choice"
+        app:title="@string/editor_choice"
+        app:singleLineTitle="false" />
+
+    <ListPreference
+        app:key="language"
+        app:title="@string/filters_language"
+        app:singleLineTitle="false"
+        app:defaultValue="en"
+        app:summary="%s"
+        app:entries="@array/available_languages_entries"
+        app:entryValues="@array/available_languages_entries" />
+
+    <ListPreference
+        app:key="category"
+        app:title="@string/filters_category"
+        app:singleLineTitle="false"
+        app:defaultValue="all"
+        app:summary="%s"
+        app:entries="@array/available_categories_entries"
+        app:entryValues="@array/available_categories_entries" />
+
+    <MultiSelectListPreference
+        app:key="color"
+        app:title="@string/filters_colors"
+        app:singleLineTitle="false"
+        app:summary="%s"
+        app:entries="@array/available_colors_entries"
+        app:entryValues="@array/available_colors_entries" />
+
+    <ListPreference
+        app:key="order"
+        app:title="@string/filters_order"
+        app:singleLineTitle="false"
+        app:defaultValue="popular"
+        app:summary="%s"
+        app:entries="@array/available_orders_entries"
+        app:entryValues="@array/available_orders_entries" />
+
+    <ListPreference
+        app:key="image_type"
+        app:title="@string/filters_image_type"
+        app:singleLineTitle="false"
+        app:defaultValue="all"
+        app:summary="%s"
+        app:entries="@array/available_image_type_entries"
+        app:entryValues="@array/available_image_type_entries" />
+
+</PreferenceScreen>
