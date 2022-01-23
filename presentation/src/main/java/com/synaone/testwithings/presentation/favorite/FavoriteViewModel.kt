@@ -8,7 +8,6 @@ import com.synaone.testwithings.presentation.browsing.models.UiBaseImage
 import com.synaone.testwithings.presentation.browsing.models.UiNoImage
 import com.synaone.testwithings.presentation.browsing.models.toUiImage
 import dagger.hilt.android.lifecycle.HiltViewModel
-import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.collect

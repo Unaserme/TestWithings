@@ -3,7 +3,6 @@ package com.synaone.testwithings.presentation.favorite.adapter
 import android.view.ViewGroup
 import com.synaone.testwithings.presentation.R
 import com.synaone.testwithings.presentation.browsing.models.UiImage
-import com.synaone.testwithings.presentation.browsing.models.UiNoMoreImage
 import com.synaone.testwithings.presentation.common.adapter.*
 import com.synaone.testwithings.presentation.common.extensions.layoutInflater
 import com.synaone.testwithings.presentation.databinding.AdapterImageItemBinding

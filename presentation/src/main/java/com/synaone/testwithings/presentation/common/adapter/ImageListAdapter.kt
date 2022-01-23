@@ -1,6 +1,5 @@
 package com.synaone.testwithings.presentation.common.adapter
 
-import androidx.annotation.StringRes
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import com.synaone.testwithings.presentation.browsing.adapter.PayloadValue

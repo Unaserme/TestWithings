@@ -1,7 +1,6 @@
 package com.synaone.testwithings.presentation.browsing
 
 import android.app.Application
-import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.synaone.testwithings.core.Success
@@ -16,7 +15,6 @@ import com.synaone.testwithings.presentation.browsing.models.UiNoImage
 import com.synaone.testwithings.presentation.browsing.models.UiNoMoreImage
 import com.synaone.testwithings.presentation.browsing.models.toUiImage
 import dagger.hilt.android.lifecycle.HiltViewModel
-import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.Flow

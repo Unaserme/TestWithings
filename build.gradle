@@ -20,6 +20,8 @@ buildscript {
                 okio                    : "2.10.0",
                 coroutines              : "1.5.1",
                 preference              : "1.1.1",
+                navigation              : "2.3.5",
+                coil                    : "1.3.2",
         ]
     }
 
